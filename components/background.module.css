@@ -2,7 +2,6 @@
   position: relative;
   height: 95vh;
   width: 100%;
-  overflow: hidden;
   z-index: -1;
 }
 
@@ -17,9 +16,11 @@
 
 .bgText {
   position: absolute;
-  top: 3rem;
+  top: 50%;
+  right: 50%;
 }
 
 .clipPath {
+  position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
