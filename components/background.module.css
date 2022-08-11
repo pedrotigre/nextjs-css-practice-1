@@ -1,5 +1,5 @@
 .bgWrap {
-  position: fixed;
+  position: relative;
   height: 95vh;
   width: 100%;
   overflow: hidden;
@@ -13,4 +13,13 @@
     rgba(40, 180, 133, 0.75)
   );
   height: 95vh;
+}
+
+.bgText {
+  position: absolute;
+  top: 3rem;
+}
+
+.clipPath {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }

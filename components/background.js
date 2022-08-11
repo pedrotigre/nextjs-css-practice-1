@@ -2,7 +2,7 @@ import Image from 'next/image';
 import classes from './background.module.css';
 export default function Background() {
   return (
-    <div>
+    <div className={classes.clipPath}>
       <div className={classes.bgGradient}>
         <div className={classes.bgWrap}>
           <Image
@@ -15,7 +15,7 @@ export default function Background() {
             quality={85}
           />
         </div>
-        <p>Some text...</p>
+        <p className={classes.bgText}>Some text...</p>
       </div>
     </div>
   );
