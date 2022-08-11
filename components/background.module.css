@@ -15,9 +15,22 @@
 }
 
 .bgText {
-  position: absolute;
-  top: 50%;
-  right: 50%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  /* position: absolute;
+  right: 30%; */
+}
+
+.headingPrimaryMain {
+  /* top: 50%; */
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+
+.headingPrimarySub {
+  /* top: 60%; */
+  font-size: 2rem;
 }
 
 .clipPath {
