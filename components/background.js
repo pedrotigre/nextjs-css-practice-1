@@ -6,7 +6,7 @@ export default function Background() {
   return (
     <div className={classes.clipPath}>
       <Nav />
-      <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem' }}>
+      <div className={classes.logo}>
         <Image alt='Logo' src='/images/logo-white.png' width={98} height={50} />
       </div>
       <div className={classes.bgGradient}>
