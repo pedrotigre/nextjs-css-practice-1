@@ -21,12 +21,17 @@ export default function Background() {
             quality={85}
           />
         </div>
-        <h1 className={classes.bgText}>
-          <span className={classes.headingPrimaryMain}>Outdoors</span>
-          <span className={classes.headingPrimarySub}>
-            is where life happens
-          </span>
-        </h1>
+        <div className={classes.textBox}>
+          <h1 className={classes.headingPrimary}>
+            <span className={classes.headingPrimaryMain}>Outdoors</span>
+            <span className={classes.headingPrimarySub}>
+              is where life happens
+            </span>
+          </h1>
+          <a href='#' className={classes.btn}>
+            Discover
+          </a>
+        </div>
       </div>
     </div>
   );
