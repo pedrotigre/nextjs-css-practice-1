@@ -37,35 +37,69 @@
   display: block;
   font-size: 4.5rem;
   font-weight: 500;
-  animation-name: moveLeft;
+  animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
 
   /* backface-visibility: hidden; if animation shakes */
 }
 
-@keyframes moveLeft {
-  0% {
-    transform: translateX(-50%);
-  }
-
-  80% {
-    transform: translateX(15%);
-  }
-
-  100% {
-    transform: translateX(0);
-  }
-}
-
 .headingPrimarySub {
   display: block;
   font-size: 2rem;
-  animation: moveRight ease-out 1s;
-  margin-bottom: 1rem;
+  animation: moveInRight ease-out 1s;
+  margin-bottom: 1.5rem;
 }
 
-@keyframes moveRight {
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  color: #777;
+
+  background-color: #fff;
+  text-decoration: none;
+  border-radius: 10rem;
+  padding: 1rem 2.4rem;
+
+  transition: all 0.2s;
+  position: relative;
+
+  animation: moveInBottom 0.8s ease-out 0.8s;
+  /* Apply the 0% animation status from the start */
+  animation-fill-mode: backwards;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  border-radius: 10rem;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover::after {
+  /* animation-name: pulse;
+  animation-duration: 4s; */
+  transform: scaleX(1.2) scaleY(1.4);
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+@keyframes moveInRight {
   0% {
     transform: translateX(50%);
   }
@@ -79,26 +113,41 @@
   }
 }
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  color: #000;
-  background-color: #fff;
-  text-decoration: none;
-  border-radius: 10rem;
-  padding: 1rem 2.4rem;
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-50%);
+  }
 
-  transition: all 0.2s;
+  80% {
+    transform: translateX(15%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+@keyframes moveInBottom {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
+
+/* @keyframes pulse {
+  0% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+} */
 
 .clipPath {
   position: relative;

@@ -29,7 +29,7 @@ export default function Background() {
             </span>
           </h1>
           <a href='#' className={classes.btn}>
-            Discover
+            Discover our tours
           </a>
         </div>
       </div>
