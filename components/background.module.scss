@@ -2,6 +2,8 @@ $primary-color: #55c57a;
 $primary-color-darker: #28b485;
 $primary-color-lighter: #7ed56f;
 
+$white: #fff;
+
 .bgBox {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
@@ -37,7 +39,7 @@ $primary-color-lighter: #7ed56f;
 }
 
 .headingPrimary {
-  color: #fff;
+  color: $white;
   letter-spacing: 1rem;
 }
 
@@ -64,7 +66,7 @@ $primary-color-lighter: #7ed56f;
   display: inline-block;
   color: #777;
 
-  background-color: #fff;
+  background-color: $white;
   text-decoration: none;
   border-radius: 10rem;
   padding: 1.6rem 3.8rem;
@@ -90,7 +92,7 @@ $primary-color-lighter: #7ed56f;
   content: '';
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: $white;
   position: absolute;
   left: 0;
   top: 0;
