@@ -4,7 +4,7 @@ import Nav from './nav';
 
 export default function Background() {
   return (
-    <div className={classes.clipPath}>
+    <div className={classes.bgBox}>
       <Nav />
       <div className={classes.logo}>
         <Image alt='Logo' src='/images/logo-white.png' width={98} height={50} />
