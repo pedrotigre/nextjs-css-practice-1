@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import classes from '../styles/Home.module.css';
+import classes from '../styles/Home.module.scss';
 import Background from '../components/background';
 
 export default function Home() {
@@ -9,10 +9,10 @@ export default function Home() {
       <Head>
         <title>Natours | Amazing Tours</title>
         <meta
-          name="description"
-          content="Sign up for amazing tours around the world!"
+          name='description'
+          content='Sign up for amazing tours around the world!'
         />
-        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel='icon' type='image/png' href='/favicon.png' />
       </Head>
       <header>
         <Background />

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import classes from './background.module.css';
+import classes from './background.module.scss';
 import Nav from './nav';
 
 export default function Background() {

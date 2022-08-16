@@ -1,4 +1,4 @@
-import classes from './nav.module.css';
+import classes from './nav.module.scss';
 
 function Nav() {
   return (
