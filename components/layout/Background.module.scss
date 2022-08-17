@@ -1,10 +1,4 @@
-$primary-color: #55c57a;
-$primary-color-darker: #28b485;
-$primary-color-lighter: #7ed56f;
-
-$white: #fff;
-$black: #000;
-$gray-dark: #777;
+@use '../../styles/variables' as *;
 
 .logo {
   position: absolute;

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import classes from '../styles/Home.module.scss';
-import Background from '../components/background';
+import Background from '../components/layout/Background';
 
 export default function Home() {
   return (
