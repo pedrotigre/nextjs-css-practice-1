@@ -14,7 +14,7 @@ export default function Home() {
         />
         <link rel='icon' type='image/png' href='/favicon.png' />
       </Head>
-      <header>
+      <header className={classes.header}>
         <Background />
       </header>
     </div>

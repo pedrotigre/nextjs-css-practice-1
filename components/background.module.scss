@@ -3,30 +3,28 @@ $primary-color-darker: #28b485;
 $primary-color-lighter: #7ed56f;
 
 $white: #fff;
+$black: #000;
+$gray-dark: #777;
 
-.bgBox {
-  position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-}
 .logo {
   position: absolute;
-  top: 2.4rem;
-  left: 2.4rem;
+  top: 1.5rem;
+  left: 1.5rem;
 }
-
-.bgWrap {
-  position: relative;
-  height: 95vh;
+.bgImage {
   z-index: -1;
 }
 
 .bgGradient {
-  background: linear-gradient(
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
     to right bottom,
     rgba($primary-color, 0.8),
     rgba($primary-color-darker, 0.8)
   );
-  height: 95vh;
+  z-index: 0;
+  position: absolute;
 }
 
 .textBox {
@@ -41,72 +39,74 @@ $white: #fff;
 .headingPrimary {
   color: $white;
   letter-spacing: 1rem;
+
+  &Main {
+    display: block;
+    font-size: 7.2rem;
+    font-weight: 500;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    /* backface-visibility: hidden; if animation shakes */
+  }
+
+  &Sub {
+    display: block;
+    font-size: 3.2rem;
+    animation: moveInRight ease-out 1s;
+    margin-bottom: 1.5rem;
+  }
 }
 
-.headingPrimaryMain {
-  display: block;
-  font-size: 7.2rem;
-  font-weight: 500;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
+.btn {
+  &:link,
+  &:visited {
+    display: inline-block;
+    color: $gray-dark;
 
-  /* backface-visibility: hidden; if animation shakes */
-}
+    background-color: $white;
+    text-decoration: none;
+    border-radius: 10rem;
+    padding: 1.6rem 3.8rem;
 
-.headingPrimarySub {
-  display: block;
-  font-size: 3.2rem;
-  animation: moveInRight ease-out 1s;
-  margin-bottom: 1.5rem;
-}
+    transition: all 0.2s;
+    position: relative;
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  color: #777;
+    animation: moveInBottom 0.8s ease-out 0.8s;
+    /* Apply the 0% animation status from the start */
+    animation-fill-mode: backwards;
+  }
 
-  background-color: $white;
-  text-decoration: none;
-  border-radius: 10rem;
-  padding: 1.6rem 3.8rem;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba($black, 0.2);
 
-  transition: all 0.2s;
-  position: relative;
+    &::after {
+      /* animation-name: pulse;
+      animation-duration: 4s; */
+      transform: scaleX(1.2) scaleY(1.4);
+      opacity: 0;
+      background-color: rgba($gray-dark, 0.25);
+    }
+  }
 
-  animation: moveInBottom 0.8s ease-out 0.8s;
-  /* Apply the 0% animation status from the start */
-  animation-fill-mode: backwards;
-}
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba($black, 0.2);
+  }
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-.btn:active {
-  transform: translateY(-1px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.btn::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background-color: $white;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  border-radius: 10rem;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn:hover::after {
-  /* animation-name: pulse;
-  animation-duration: 4s; */
-  transform: scaleX(1.2) scaleY(1.4);
-  opacity: 0;
-  background-color: rgba(255, 255, 255, 0.25);
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 10rem;
+    transition: all 0.4s ease-in-out;
+  }
 }
 
 @keyframes moveInRight {
