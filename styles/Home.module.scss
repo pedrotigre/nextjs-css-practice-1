@@ -1,11 +1,5 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
+@use './variables' as *;
+@use './mixins' as *;
 
 .container {
   padding: 2rem;
@@ -15,4 +9,44 @@ Dark green: #28b485
   height: 95vh;
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  margin-bottom: 1.5rem;
+}
+
+.row {
+  max-width: $row-width;
+  background-color: lighten($gray-dark, 40%);
+
+  &:not(:last-child) {
+    margin-bottom: 6rem;
+  }
+
+  @include clearfix;
+
+  // [class*='colOne'] {
+  //   background-color: $primary-color-darker;
+  //   height: 5rem;
+  //   float: left;
+  //   &:not(:last-child) {
+  //     margin-right: $gutter-margin;
+  //   }
+  // }
+
+  %col-placeholder {
+    background-color: $primary-color-darker;
+    height: 5rem;
+    float: left;
+    &:not(:last-child) {
+      margin-right: $gutter-margin;
+    }
+  }
+
+  .colOneOfTwo {
+    @extend %col-placeholder;
+    width: calc((100% - #{$gutter-margin}) / 2);
+  }
+
+  .colOneOfThree {
+    @extend %col-placeholder;
+    width: calc((100% - 2 * #{$gutter-margin}) / 3);
+  }
 }
