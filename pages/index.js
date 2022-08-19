@@ -24,13 +24,13 @@ export default function Home() {
         <div className={classes.row}>
           <div className={classes.colOneOfTwo}>
             <div className={classes.sectionTours_LeftContent}>
-              <h2>You are going to fall in love with nature</h2>
+              <h3>You are going to fall in love with nature</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
                 perspiciatis assumenda placeat vitae, excepturi sunt porro et
                 hic dignissimos repudiandae! Deserunt, illum aperiam.
               </p>
-              <h2>Live adventures like you never have before</h2>
+              <h3>Live adventures like you never have before</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Eveniet, voluptate quas nostrum quisquam unde dolores? Aliquam
