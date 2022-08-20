@@ -50,6 +50,7 @@ export default function Home() {
                     alt='Mountain landscape with a river'
                     width='400'
                     height='267'
+                    layout='responsive'
                   />
                 </div>
                 <div className={classes.imgTwo}>
@@ -58,6 +59,7 @@ export default function Home() {
                     alt='Cyclist driving a bicycle on a mountain street'
                     width='400'
                     height='267'
+                    layout='responsive'
                   />
                 </div>
                 <div className={classes.imgThree}>
@@ -66,6 +68,7 @@ export default function Home() {
                     alt='Woman walking on a montain cover with grass '
                     width='400'
                     height='267'
+                    layout='responsive'
                   />
                 </div>
               </div>
