@@ -101,15 +101,50 @@
       &:hover {
         background-color: $primary-color;
         color: $white;
-        border-bottom: none;
+        border-color: $primary-color;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-        transform: translateY(-0.4rem);
+        transform: translateY(-3px);
       }
 
       &:active {
-        transform: translateY(-0.1rem);
+        transform: translateY(-1px);
         box-shadow: 0 0.7rem 1.2rem rgba(0, 0, 0, 0.15);
       }
+    }
+  }
+
+  &_imgContainer {
+    position: relative;
+
+    [class*='img'] {
+      transition: all 0.4s;
+      position: absolute;
+      z-index: 0;
+
+      &:hover {
+        outline: 1.4rem solid $primary-color;
+        outline-offset: 1.8rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+        transform: scale(1.05);
+        z-index: 1;
+      }
+    }
+
+    &:hover [class*='img']:not(:hover) {
+      transform: scale(0.95);
+    }
+
+    .imgOne {
+      top: 0;
+      left: 0;
+    }
+    .imgTwo {
+      top: 6rem;
+      right: -13rem;
+    }
+    .imgThree {
+      top: 16rem;
+      right: 10rem;
     }
   }
 }

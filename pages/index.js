@@ -17,33 +17,62 @@ export default function Home() {
       <header className={classes.header}>
         <Background />
       </header>
-      <section className={classes.sectionTours}>
-        <h2 className={classes.sectionTours_Title}>
-          Exciting tours for adventorous people
-        </h2>
-        <div className={classes.row}>
-          <div className={classes.colOneOfTwo}>
-            <div className={classes.sectionTours_LeftContent}>
-              <h3>You are going to fall in love with nature</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                perspiciatis assumenda placeat vitae, excepturi sunt porro et
-                hic dignissimos repudiandae! Deserunt, illum aperiam.
-              </p>
-              <h3>Live adventures like you never have before</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, voluptate quas nostrum quisquam unde dolores? Aliquam
-                perspiciatis assumenda placeat vitae.
-              </p>
-              <a href='#' className={classes.sectionTours_btn}>
-                Learn More &rarr;
-              </a>
+      <main>
+        <section className={classes.sectionTours}>
+          <h2 className={classes.sectionTours_Title}>
+            Exciting tours for adventorous people
+          </h2>
+          <div className={classes.row}>
+            <div className={classes.colOneOfTwo}>
+              <div className={classes.sectionTours_LeftContent}>
+                <h3>You are going to fall in love with nature</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam perspiciatis assumenda placeat vitae, excepturi sunt
+                  porro et hic dignissimos repudiandae! Deserunt, illum aperiam.
+                </p>
+                <h3>Live adventures like you never have before</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, voluptate quas nostrum quisquam unde dolores? Aliquam
+                  perspiciatis assumenda placeat vitae.
+                </p>
+                <a href='#' className={classes.sectionTours_btn}>
+                  Learn More &rarr;
+                </a>
+              </div>
+            </div>
+            <div className={classes.colOneOfTwo}>
+              <div className={classes.sectionTours_imgContainer}>
+                <div className={classes.imgOne}>
+                  <Image
+                    src='/images/nat-1-large.jpg'
+                    alt='Mountain landscape with a river'
+                    width='400'
+                    height='267'
+                  />
+                </div>
+                <div className={classes.imgTwo}>
+                  <Image
+                    src='/images/nat-2-large.jpg'
+                    alt='Cyclist driving a bicycle on a mountain street'
+                    width='400'
+                    height='267'
+                  />
+                </div>
+                <div className={classes.imgThree}>
+                  <Image
+                    src='/images/nat-3-large.jpg'
+                    alt='Woman walking on a montain cover with grass '
+                    width='400'
+                    height='267'
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <div className={classes.colOneOfTwo}>Ok donkey 2</div>
-        </div>
-      </section>
+        </section>
+      </main>
       {/* <section className={classes.floatTest}>
         <div className={classes.row}>
           <div className={classes.colOneOfTwo}>&nbsp;</div>
