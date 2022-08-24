@@ -1,8 +1,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import classes, { features } from '../styles/Home.module.scss';
+import classes from '../styles/Home.module.scss';
 import Background from '../components/layout/Background';
-import { allowedStatusCodes } from 'next/dist/lib/load-custom-routes';
+import Background2 from '../components/layout/Background2';
+import WorldIcon from '../components/icons/home/WorldIcon';
 
 export default function Home() {
   return (
@@ -77,10 +78,24 @@ export default function Home() {
           </div>
         </section>
         <section className='features'>
-          <div className='feature-box'>
-            <h3>Explore the world</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-          </div>
+          <Background2
+            alt={'Snow mountain and a river'}
+            imageSrc={'/images/nat-4.jpg'}
+          >
+            <div className={classes.row}>
+              <div className={classes.colOneOfFour}>
+                <div className={classes.featureCard}>
+                  <div className={classes.icon}>
+                    <WorldIcon />
+                  </div>
+                  <h3>Explore the world</h3>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Background2>
         </section>
       </main>
       {/* <section className={classes.floatTest}>
