@@ -1,7 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import classes from '../styles/Home.module.scss';
+import classes, { features } from '../styles/Home.module.scss';
 import Background from '../components/layout/Background';
+import { allowedStatusCodes } from 'next/dist/lib/load-custom-routes';
 
 export default function Home() {
   return (
@@ -73,6 +74,12 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className='features'>
+          <div className='feature-box'>
+            <h3>Explore the world</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </section>
       </main>
