@@ -5,11 +5,11 @@
 }
 .bgContainer {
   position: relative;
-  height: 95vh;
+  height: inherit;
 }
 .mainContent {
   position: absolute;
-  top: 48%;
+  top: 40%;
   right: 50%;
   transform: translateX(50%);
 }

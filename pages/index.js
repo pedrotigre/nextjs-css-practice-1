@@ -77,7 +77,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='features'>
+        <section className={classes.features}>
           <Background2
             alt={'Snow mountain and a river'}
             imageSrc={'/images/nat-4.jpg'}
