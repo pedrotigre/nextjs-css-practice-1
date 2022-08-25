@@ -4,6 +4,9 @@ import classes from '../styles/Home.module.scss';
 import Background from '../components/layout/Background';
 import Background2 from '../components/layout/Background2';
 import WorldIcon from '../components/icons/home/WorldIcon';
+import HeartIcon from '../components/icons/home/HeartIcon';
+import CompassIcon from '../components/icons/home/CompassIcon';
+import MapIcon from '../components/icons/home/MapIcon';
 
 export default function Home() {
   return (
@@ -90,7 +93,44 @@ export default function Home() {
                   </div>
                   <h3>Explore the world</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam, necessitatibus.
+                  </p>
+                </div>
+              </div>
+              <div className={classes.colOneOfFour}>
+                <div className={classes.featureCard}>
+                  <div className={classes.icon}>
+                    <MapIcon />
+                  </div>
+                  <h3>Find your way</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam, necessitatibus.
+                  </p>
+                </div>
+              </div>
+              <div className={classes.colOneOfFour}>
+                <div className={classes.featureCard}>
+                  <div className={classes.icon}>
+                    <CompassIcon />
+                  </div>
+                  <h3>Meet nature</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam, necessitatibus.
+                  </p>
+                </div>
+              </div>
+              <div className={classes.colOneOfFour}>
+                <div className={classes.featureCard}>
+                  <div className={classes.icon}>
+                    <HeartIcon />
+                  </div>
+                  <h3>Live a healthier life</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsam, necessitatibus.
                   </p>
                 </div>
               </div>

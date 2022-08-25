@@ -159,6 +159,7 @@
   background-color: rgba($white, 0.8);
   border-radius: 1rem;
   box-shadow: 0 1.5rem 4.5rem rgba(0, 0, 0, 0.15);
+  padding: 1rem;
   width: 25rem;
   height: 30rem;
   transition: all 0.5s;
@@ -179,7 +180,7 @@
 }
 
 .icon {
-  padding: 4rem 0 1.5rem 0;
+  padding: 3rem 0 1.5rem 0;
 
   //   background-image: linear-gradient(
   //     to right,
