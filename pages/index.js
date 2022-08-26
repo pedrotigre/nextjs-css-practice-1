@@ -137,6 +137,27 @@ export default function Home() {
             </div>
           </Background2>
         </section>
+        <section className={classes.sectionPopularTours}>
+          <h2 className={classes.sectionTours_Title}>Most popular tours</h2>
+          <div className={classes.row}>
+            <div className={classes.colOneOfThree}>
+              <div className={classes.flipCard}>
+                <div
+                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Front}`}
+                >
+                  Front
+                </div>
+                <div
+                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Back}`}
+                >
+                  Back
+                </div>
+              </div>
+            </div>
+            <div className={classes.colOneOfThree}>Ok</div>
+            <div className={classes.colOneOfThree}>Ok</div>
+          </div>
+        </section>
       </main>
       {/* <section className={classes.floatTest}>
         <div className={classes.row}>
