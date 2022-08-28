@@ -238,17 +238,17 @@
 
       &_Cta {
         color: #fff;
-        margin: 10rem 0;
+        margin: 35% auto;
 
         :first-child {
           text-transform: uppercase;
-          margin-bottom: 2rem;
-          font-size: 1.4rem;
+          margin-bottom: 0.5rem;
         }
 
         &_Price {
-          font-size: 5.4rem;
-          font-weight: 400;
+          font-size: 6rem;
+          font-weight: 100;
+          margin-bottom: 6rem;
         }
       }
     }
