@@ -132,6 +132,7 @@ export default function Home() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsam, necessitatibus.
                   </p>
+                  home em cima de uma rocha no mar
                 </div>
               </div>
             </div>
@@ -145,7 +146,26 @@ export default function Home() {
                 <div
                   className={`${classes.flipCard_Content} ${classes.flipCard_Content_Front}`}
                 >
-                  Front
+                  <div className={classes.flipCard_Content_Image}>
+                    <Image
+                      src='/images/nat-5.jpg'
+                      alt='Man on top of a rock in the sea'
+                      layout='fill'
+                      objectFit='cover'
+                    />
+                  </div>
+                  <h4 className={classes.flipCard_Content_Heading}>
+                    <span>The sea explorer</span>
+                  </h4>
+                  <div className={classes.flipCard_Content_Details}>
+                    <ul>
+                      <li>3 day tour</li>
+                      <li>Up to 30 people</li>
+                      <li>2 tour guides</li>
+                      <li>Sleep in cozy hostels</li>
+                      <li>Difficulty: very easy</li>
+                    </ul>
+                  </div>
                 </div>
                 <div
                   className={`${classes.flipCard_Content} ${classes.flipCard_Content_Back}`}

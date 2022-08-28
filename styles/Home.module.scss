@@ -224,13 +224,28 @@
     height: 100%;
     transition: all 0.9s ease;
     backface-visibility: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+    border-radius: 5px;
+    overflow: hidden;
 
     &_Front {
-      background-color: red;
     }
     &_Back {
       background-color: green;
       transform: rotateY(180deg);
+    }
+
+    &_Image {
+      position: relative;
+      height: 40%;
+      background-image: linear-gradient(
+        to right bottom,
+        $color-orange-light,
+        $color-orange-dark
+      );
+      & img {
+        mix-blend-mode: screen;
+      }
     }
   }
 
