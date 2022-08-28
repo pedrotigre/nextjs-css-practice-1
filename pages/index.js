@@ -7,6 +7,7 @@ import WorldIcon from '../components/icons/home/WorldIcon';
 import HeartIcon from '../components/icons/home/HeartIcon';
 import CompassIcon from '../components/icons/home/CompassIcon';
 import MapIcon from '../components/icons/home/MapIcon';
+import WhiteButton from '../components/WhiteButton';
 
 export default function Home() {
   return (
@@ -132,7 +133,6 @@ export default function Home() {
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Ipsam, necessitatibus.
                   </p>
-                  home em cima de uma rocha no mar
                 </div>
               </div>
             </div>
@@ -170,7 +170,13 @@ export default function Home() {
                 <div
                   className={`${classes.flipCard_Content} ${classes.flipCard_Content_Back}`}
                 >
-                  Back
+                  <div className={classes.flipCard_Content_Back_Cta}>
+                    <p>Only</p>
+                    <p className={classes.flipCard_Content_Back_Cta_Price}>
+                      $297
+                    </p>
+                    <WhiteButton href={'#'}>Book now!</WhiteButton>
+                  </div>
                 </div>
               </div>
             </div>
