@@ -229,11 +229,28 @@
     overflow: hidden;
 
     &_Back {
-      background-image: linear-gradient(
-        to right bottom,
-        $color-orange-light,
-        $color-orange-dark
-      );
+      &.flipCard_First {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-orange-light,
+          $color-orange-dark
+        );
+      }
+      &.flipCard_Second {
+        background-image: linear-gradient(
+          to right bottom,
+          $primary-color-lighter,
+          $primary-color-darker
+        );
+      }
+      &.flipCard_Third {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue-dark
+        );
+      }
+
       transform: rotateY(180deg);
 
       &_Cta {
@@ -256,11 +273,27 @@
     &_Image {
       position: relative;
       height: 45%;
-      background-image: linear-gradient(
-        to right bottom,
-        $color-orange-light,
-        $color-orange-dark
-      );
+      .flipCard_First & {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-orange-light,
+          $color-orange-dark
+        );
+      }
+      .flipCard_Second & {
+        background-image: linear-gradient(
+          to right bottom,
+          $primary-color-lighter,
+          $primary-color-darker
+        );
+      }
+      .flipCard_Third & {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-blue-light,
+          $color-blue-dark
+        );
+      }
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
       & img {
@@ -282,10 +315,27 @@
       span {
         padding: 1rem;
         box-decoration-break: clone;
+      }
+
+      .flipCard_First & span {
         background-image: linear-gradient(
           to right bottom,
           rgba($color-orange-light, 0.8),
           rgba($color-orange-dark, 0.9)
+        );
+      }
+      .flipCard_Second & span {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($primary-color-lighter, 0.8),
+          rgba($primary-color-darker, 0.9)
+        );
+      }
+      .flipCard_Third & span {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-blue-light, 0.8),
+          rgba($color-blue-dark, 0.9)
         );
       }
     }
@@ -313,4 +363,9 @@
   &:hover &_Content_Back {
     transform: rotateY(0);
   }
+}
+
+.btnTour {
+  margin-top: 10rem;
+  color: #fff;
 }

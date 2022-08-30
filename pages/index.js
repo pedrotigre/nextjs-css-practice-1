@@ -8,6 +8,7 @@ import HeartIcon from '../components/icons/home/HeartIcon';
 import CompassIcon from '../components/icons/home/CompassIcon';
 import MapIcon from '../components/icons/home/MapIcon';
 import WhiteButton from '../components/WhiteButton';
+import ButtonCustom from '../components/ButtonCustom';
 
 export default function Home() {
   return (
@@ -144,7 +145,7 @@ export default function Home() {
             <div className={classes.colOneOfThree}>
               <div className={classes.flipCard}>
                 <div
-                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Front}`}
+                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Front} ${classes.flipCard_First}`}
                 >
                   <div className={classes.flipCard_Content_Image}>
                     <Image
@@ -168,7 +169,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div
-                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Back}`}
+                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Back} ${classes.flipCard_First}`}
                 >
                   <div className={classes.flipCard_Content_Back_Cta}>
                     <p>Only</p>
@@ -180,8 +181,89 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className={classes.colOneOfThree}>Ok</div>
-            <div className={classes.colOneOfThree}>Ok</div>
+            <div className={classes.colOneOfThree}>
+              <div className={classes.flipCard}>
+                <div
+                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Front} ${classes.flipCard_Second}`}
+                >
+                  <div className={classes.flipCard_Content_Image}>
+                    <Image
+                      src='/images/nat-6.jpg'
+                      alt='Forest with mountains in the background'
+                      layout='fill'
+                      objectFit='cover'
+                    />
+                  </div>
+                  <h4 className={classes.flipCard_Content_Heading}>
+                    <span>The forest hiker</span>
+                  </h4>
+                  <div className={classes.flipCard_Content_Details}>
+                    <ul>
+                      <li>7 day tour</li>
+                      <li>Up to 40 people</li>
+                      <li>6 tour guides</li>
+                      <li>Sleep in provided tents</li>
+                      <li>Difficulty: medium</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Back} ${classes.flipCard_Second}`}
+                >
+                  <div className={classes.flipCard_Content_Back_Cta}>
+                    <p>Only</p>
+                    <p className={classes.flipCard_Content_Back_Cta_Price}>
+                      $329
+                    </p>
+                    <WhiteButton href={'#'}>Book now!</WhiteButton>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className={classes.colOneOfThree}>
+              <div className={classes.flipCard}>
+                <div
+                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Front} ${classes.flipCard_Third}`}
+                >
+                  <div className={classes.flipCard_Content_Image}>
+                    <Image
+                      src='/images/nat-7.jpg'
+                      alt='Man hiking'
+                      layout='fill'
+                      objectFit='cover'
+                    />
+                  </div>
+                  <h4 className={classes.flipCard_Content_Heading}>
+                    <span>The snow adventurer</span>
+                  </h4>
+                  <div className={classes.flipCard_Content_Details}>
+                    <ul>
+                      <li>5 day tour</li>
+                      <li>Up to 15 people</li>
+                      <li>3 tour guides</li>
+                      <li>Sleep in provided tents</li>
+                      <li>Difficulty: hard</li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  className={`${classes.flipCard_Content} ${classes.flipCard_Content_Back} ${classes.flipCard_Third}`}
+                >
+                  <div className={classes.flipCard_Content_Back_Cta}>
+                    <p>Only</p>
+                    <p className={classes.flipCard_Content_Back_Cta_Price}>
+                      $499
+                    </p>
+                    <WhiteButton href={'#'}>Book now!</WhiteButton>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={classes.btnTour}>
+            <ButtonCustom href={'#'}>
+              <strong>Discover all tours!</strong>
+            </ButtonCustom>
           </div>
         </section>
       </main>
