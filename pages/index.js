@@ -266,6 +266,14 @@ export default function Home() {
             </ButtonCustom>
           </div>
         </section>
+        <section className={classes.sectionStories}>
+          <div className={classes.row}>
+            <h2 className={classes.sectionTours_Title}>
+              We make people genuinely happy
+            </h2>
+            <div className={classes.storie}>Testimonial example</div>
+          </div>
+        </section>
       </main>
       {/* <section className={classes.floatTest}>
         <div className={classes.row}>

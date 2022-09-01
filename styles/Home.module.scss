@@ -207,7 +207,7 @@
 .sectionPopularTours {
   @include u.centerText;
   background-color: rgb(245, 245, 245);
-  padding: 30rem 0 50rem 0;
+  padding: 30rem 0 20rem 0;
   margin-top: -11rem;
 }
 
@@ -368,4 +368,10 @@
 .btnTour {
   margin-top: 10rem;
   color: #fff;
+}
+
+.sectionStories {
+  @include u.centerText;
+
+  padding: 15rem 0;
 }
