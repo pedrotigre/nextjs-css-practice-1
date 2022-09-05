@@ -271,7 +271,23 @@ export default function Home() {
             <h2 className={classes.sectionTours_Title}>
               We make people genuinely happy
             </h2>
-            <div className={classes.storie}>Testimonial example</div>
+            <div className={classes.storie}>
+              <div className={classes.imgContainer}>
+                <Image
+                  alt='Girl on a boat'
+                  src='/images/nat-8.jpg'
+                  layout='fill'
+                  objectFit='cover'
+                />
+              </div>
+              <h3>Testimonial example</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquam asperiores, officia, sed dolores fuga deserunt ipsam
+                ipsum minima quibusdam tempore voluptatem, molestiae veniam
+                sint. Laudantium consequatur accusamus error rem similique!
+              </p>
+            </div>
           </div>
         </section>
       </main>

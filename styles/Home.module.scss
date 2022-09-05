@@ -375,3 +375,28 @@
 
   padding: 15rem 0;
 }
+
+.storie {
+  background-color: rgba($color-gray-light, 0.2);
+  width: 100rem;
+  height: 22rem;
+  padding: 4rem;
+  margin: 0 auto;
+  text-align: left;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+
+  & > * {
+    transform: skewX(10deg);
+  }
+  transform: skewX(-10deg);
+
+  .imgContainer {
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    margin-right: 2.5rem;
+  }
+}
