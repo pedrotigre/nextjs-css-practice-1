@@ -267,19 +267,45 @@ export default function Home() {
           </div>
         </section>
         <section className={classes.sectionStories}>
+          <div className={classes.bgVideo}>
+            <video className={classes.bgVideo_Content} autoPlay muted loop>
+              <source src='images/video.mp4' type='video/mp4' />
+              <source src='images/video.webm' type='video/webm' />
+              Your browser is not supported!
+            </video>
+          </div>
           <div className={classes.row}>
             <h2 className={classes.sectionTours_Title}>
               We make people genuinely happy
             </h2>
             <div className={classes.storie}>
-              <div className={classes.imgContainer}>
+              <figure className={classes.imgContainer}>
+                <figcaption className={classes.authorName}>Mary</figcaption>
                 <Image
                   alt='Girl on a boat'
                   src='/images/nat-8.jpg'
                   layout='fill'
                   objectFit='cover'
                 />
-              </div>
+              </figure>
+              <h3>Testimonial example</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquam asperiores, officia, sed dolores fuga deserunt ipsam
+                ipsum minima quibusdam tempore voluptatem, molestiae veniam
+                sint. Laudantium consequatur accusamus error rem similique!
+              </p>
+            </div>
+            <div className={classes.storie}>
+              <figure className={classes.imgContainer}>
+                <figcaption className={classes.authorName}>Jackson</figcaption>
+                <Image
+                  alt='Man on top of a mountain'
+                  src='/images/nat-9.jpg'
+                  layout='fill'
+                  objectFit='cover'
+                />
+              </figure>
               <h3>Testimonial example</h3>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -289,6 +315,11 @@ export default function Home() {
               </p>
             </div>
           </div>
+          {/* Yes I'm reusing this btn from other section, 
+		  	should have created a component for it*/}
+          <a href='#' className={classes.sectionTours_btn}>
+            Read all stories &rarr;
+          </a>
         </section>
       </main>
       {/* <section className={classes.floatTest}>
