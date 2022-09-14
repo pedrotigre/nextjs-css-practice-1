@@ -452,3 +452,12 @@
     object-fit: cover;
   }
 }
+
+.bookSection {
+  height: 75vh;
+  background-image: linear-gradient(
+    to right bottom,
+    $primary-color-lighter,
+    $primary-color-darker
+  );
+}

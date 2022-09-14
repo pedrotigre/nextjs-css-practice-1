@@ -327,17 +327,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      {/* <section className={classes.floatTest}>
-        <div className={classes.row}>
-          <div className={classes.colOneOfTwo}>&nbsp;</div>
-          <div className={classes.colOneOfTwo}>&nbsp;</div>
-        </div>
-        <div className={classes.row}>
-          <div className={classes.colOneOfThree}>&nbsp;</div>
-          <div className={classes.colOneOfThree}>&nbsp;</div>
-          <div className={classes.colOneOfThree}>&nbsp;</div>
-        </div>
-      </section> */}
     </div>
   );
 }
