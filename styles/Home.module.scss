@@ -455,9 +455,18 @@
 
 .bookSection {
   height: 75vh;
+  padding-top: 25vh;
   background-image: linear-gradient(
     to right bottom,
     $primary-color-lighter,
     $primary-color-darker
   );
+}
+
+.bookContainer {
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+  width: 50%;
+  height: 65%;
 }

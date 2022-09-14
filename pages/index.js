@@ -323,6 +323,14 @@ export default function Home() {
         </section>
         <section className={classes.bookSection}>
           <div className={classes.bookContainer}>
+            <div className={classes.row}>
+              <Image
+                alt='Road in a forest with a river and mountains in the background'
+                src='/images/nat-10.jpg'
+                layout='fill'
+                objectFit='cover'
+              />
+            </div>
             {/* <form action='#' className={classes.bookForm}></form> */}
           </div>
         </section>
