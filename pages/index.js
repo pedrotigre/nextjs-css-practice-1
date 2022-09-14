@@ -321,6 +321,11 @@ export default function Home() {
             Read all stories &rarr;
           </a>
         </section>
+        <section className={classes.bookSection}>
+          <div className={classes.bookContainer}>
+            {/* <form action='#' className={classes.bookForm}></form> */}
+          </div>
+        </section>
       </main>
       {/* <section className={classes.floatTest}>
         <div className={classes.row}>
