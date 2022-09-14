@@ -330,6 +330,12 @@ export default function Home() {
                 layout='fill'
                 objectFit='cover'
               />
+              <div className={classes.bgGradient} />
+              <div className={classes.formContainer}>
+                <h2 className={classes.sectionTours_Title}>
+                  Start booking now!
+                </h2>
+              </div>
             </div>
             {/* <form action='#' className={classes.bookForm}></form> */}
           </div>
