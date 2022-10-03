@@ -335,6 +335,32 @@ export default function Home() {
                 <h2 className={classes.sectionTours_Title}>
                   Start booking now!
                 </h2>
+                <form action='#'>
+                  <div className={classes.formGroup}>
+                    <input
+                      className={classes.formInput}
+                      type='text'
+                      id='name'
+                      placeholder='Full name'
+                      required
+                    />
+                    <label className={classes.formLabel} htmlFor='name'>
+                      Full name
+                    </label>
+                  </div>
+                  <div className={classes.formGroup}>
+                    <input
+                      className={classes.formInput}
+                      type='text'
+                      id='email'
+                      placeholder='Email address'
+                      required
+                    />
+                    <label className={classes.formLabel} htmlFor='name'>
+                      Email address
+                    </label>
+                  </div>
+                </form>
               </div>
             </div>
             {/* <form action='#' className={classes.bookForm}></form> */}

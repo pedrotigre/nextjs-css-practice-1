@@ -491,3 +491,27 @@
     margin-left: 4rem;
   }
 }
+
+/********** FORM **********/
+
+.formGroup:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.formInput {
+  display: block;
+  font-size: inherit;
+  border-radius: 3px;
+  padding: 1.4rem;
+  width: 80%;
+  border: none;
+  border-bottom: 3px solid transparent;
+
+  &:focus {
+    outline: none;
+    border-bottom: 3px solid $primary-color-darker;
+    box-shadow: 0 1rem 2rem rgba($black, 0.15);
+  }
+}
+
+/******** END FORM ********/
