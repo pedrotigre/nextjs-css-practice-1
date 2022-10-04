@@ -351,7 +351,7 @@ export default function Home() {
                   <div className={classes.formGroup}>
                     <input
                       className={classes.formInput}
-                      type='text'
+                      type='email'
                       id='email'
                       placeholder='Email address'
                       required
