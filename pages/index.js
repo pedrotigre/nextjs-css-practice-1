@@ -361,6 +361,26 @@ export default function Home() {
                     </label>
                   </div>
                 </form>
+                <div className={classes.radioGroup}>
+                  <input type='radio' id='smallTourOption' name='tourOption' />
+                  <label
+                    className={classes.radioLabel}
+                    htmlFor='smallTourOption'
+                  >
+                    <span className={classes.radioButton}></span>
+                    Small tour group
+                  </label>
+                </div>
+                <div className={classes.radioGroup}>
+                  <input type='radio' id='largeTourOption' name='tourOption' />
+                  <label
+                    className={classes.radioLabel}
+                    htmlFor='largeTourOption'
+                  >
+                    <span className={classes.radioButton}></span>
+                    Large tour group
+                  </label>
+                </div>
               </div>
             </div>
             {/* <form action='#' className={classes.bookForm}></form> */}

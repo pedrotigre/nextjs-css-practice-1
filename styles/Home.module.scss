@@ -545,4 +545,44 @@
   font-family: inherit;
 }
 
+.radioGroup {
+  display: inline-block;
+  width: 50%;
+  padding: inherit;
+
+  input {
+    display: none;
+
+    &:checked + .radioLabel .radioButton::after {
+      opacity: 1;
+    }
+  }
+}
+
+.radioLabel {
+  padding-left: 5.5rem;
+}
+.radioButton {
+  height: 3rem;
+  width: 3rem;
+  border: 0.5rem solid $primary-color-darker;
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  transform: translate(50%, -5%);
+  margin-right: 2rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: $primary-color-darker;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    transform: translateX(25%) translateY(25%);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+}
+
 /******** END FORM ********/
